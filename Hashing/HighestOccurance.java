@@ -24,7 +24,7 @@ public class HighestOccurance {
         int element = -1;
 
         for(Map.Entry<Integer, Integer> entry : hash.entrySet()){
-            if(entry.getValue() > maxFreq){
+            if(entry.getValue() > maxFreq || (entry.getValue() == maxFreq && entry.getKey() < element)){
                 maxFreq = entry.getValue();
                 element = entry.getKey();        
             }
