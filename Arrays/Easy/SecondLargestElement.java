@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SecondLargestElement {
     public static int secondLargestElement(int n, int[] arr){
         // bruteforce approach: sort the array and the last element would be the largest element present in the array
-        // using arr[n-2] to find the second largest element might cause an error because we dont know if the array conatains any duplicate element or not
+        // using arr[n-2] to find the second largest element might cause an error because we dont know if the array contains any duplicate element or not
         // for an array with constant elements, second largest = -1
 
         // better solution: using two loop passes
