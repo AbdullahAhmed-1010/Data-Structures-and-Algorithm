@@ -36,8 +36,10 @@ public class IntersectionArray {
         ArrayList<Integer> res = new ArrayList<>();
 
         while(i < n1 && j < n2){
-            if(arr1[i] != arr2[j])
+            if(arr1[i] < arr2[j])
                 i++;
+            else if(arr1[i] > arr2[j])
+                j++;
             else{
                 res.add(arr1[i]);
                 i++;
